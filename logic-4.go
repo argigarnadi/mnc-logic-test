@@ -81,7 +81,7 @@ func ValidasiCuti(strJoinDate string, strLeaveDate string, sharedLeave int, dura
 	employeeLeave := (remainingDays * (14 - sharedLeave)) / 365
 
 	if durationLeave > 3 {
-		return false, "Cuti pribadi max 3 hari berturut-turut"
+		return false, "Alasan : Cuti pribadi max 3 hari berturut-turut"
 	}
 
 	if durationLeave > employeeLeave {
